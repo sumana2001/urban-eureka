@@ -19,10 +19,17 @@ app.get("/",function(req,res){
   res.render("home", {startingContent:homeStartingContent});
 });
 
+app.get("/about", function(req,res){
+  res.render("about",{content:aboutContent});
+});
 
+app.get("/contact", function(req,res){
+  res.render("contact",{content:contactContent});
+});
 
-
-
+app.get("/compose", function(req,res){
+  res.render("compose");
+});
 
 
 
